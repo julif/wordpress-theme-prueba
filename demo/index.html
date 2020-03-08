@@ -9,11 +9,314 @@
   </head>
   <body>
     <container>
-      <header> <a href="index.html"> Inicio </a> </header>
+      <header>
+  
+        <!-- <a href=""> Julif </a> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <style>
+            nav{
+              /* background-color: #1c1f2b; */
+              background-color: white;
+              background-color: #111c29;
+              /* font-family: "Quicksand", sans-serif; */
+              /* position: fixed; */
+              top: 0;
+              width: 100%;
+              color: white;
+              /* transition: 0.8s; */
+              padding: 9px 0px;
+              font-size: 18px;
+              font-weight: 700;
+              /* box-shadow: 0 5px 10px rgba(28, 30, 58, 0.23), 0 7px 18px rgba(0, 9, 128, 0.05); */
+              /* border-bottom: 2px solid #dcdcdc; */
+              /* z-index: 1000000; */
+              text-align: left;
+        }
+        nav #main_nav_content {
+          display: flow-root;
+          width: 98%;
+          max-width: 1290px;
+          margin: 0px auto;
+        }
+        
+        
+        nav a {
+          /* color: white; */
+          /* color: black; */
+          color: #97a0ad;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        .active {
+          /* color: #f6b606!important; */
+          /* background: #29abe0; */
+          /* border: 1px solid #29abe0; */
+          color: var(--active-color)!important;
+          font-weight: 600;
+          text-transform: none;
+          border-radius: 13px;
+          /* transition: 0.8s; */
+        }
+        .right {
+          float: right;
+          display: flex;
+        }
+        #julif-logo-background {
+          fill: var(--active-color)!important;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        nav form{
+                /* margin: 10px; */
+                margin: 0px;
+                margin-top: 5px;
+                position: relative;
+          }
+          nav form input{    
+            background-color: #ffffff;
+            border: solid rgba(0,0,0,0) 1.5px;
+            height: 36px;
+            width: 100%;
+            border-radius: 9999px;
+            padding-left: 1.5rem; 
+            padding-right: 1.5rem; 
+            padding-top: 1.35rem;
+            padding-bottom: 1.35rem;
+            color: black!important;
+            /* background-color: rgba(255,255,255,0.1); */
+            font-weight: 600;
+            -webkit-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+          }
+          /* sidebar .screen-reader-text, sidebar .search-submit{ display:none;} */
+          input:focus {
+            border: solid #95d0ff 1.5px;
+            outline: none;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.0125), 0 0 8px rgba(34,139,230,0.5);
+             box-shadow: inset 0 1px 1px rgba(0,0,0,0.0125), 0 0 8px rgba(34,139,230,0.5);
+          }
+          nav .search-submit{   
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            position: absolute;    
+            right: 1rem;
+            transform: translateY(-50%);
+            padding: 11px;
+            /* background-color: red; */
+            cursor: pointer;
+          }
+          button {     
+            border: transparent;
+            background-color: transparent;
+            color: #afb3bd!important;
+          }
+          ::placeholder {
+            color:  #afb3bd!important;
+          }
+        </style>
+        <nav>
+        <div id="main_nav_content">
+            <a href="index.html" style="padding: 0px;"> 
+                <div style="text-align: left;">
+                <img src="img/avatar_julif.png" alt="Julif" style="    position: absolute;height: 60px;width: auto;margin-top: -5px;">
+                <img src="img/jijiji3.svg" alt="Julif" style="position: absolute;height: 50px;width:auto;    padding-left: 60px;">
+            </div>
+            <style> 
+            #julif-logo-background{  fill: var(--active-color)!important;}
+            .julif-logo-letras{ fill:white!important;}
+            </style>   
+        </a>
+                    <div class="right">
+                      <div class="desktop-only" style="display: flex;margin-right: 15px;">  
+                        <a id="nav-blog-link" href="index.html" class="active"> Blog</a>   
+                        <a id="nav-devblog-link" href="devblog.html"> Devblog</a>
+                      </div>
+                      
+        
+                      <!-- <form role="search" method="get" class="search-form" action="http://localhost/">
+                        <label for="search-form-5d35dfdc4323d">
+        
+                        </label>
+                        <input type="search" id="search-form-5d35dfdc4323d" class="search-field" placeholder="Buscar …" value="" name="s">
+                        <button type="submit" class="search-submit"><span class="screen-reader-text">   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-fw"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg></span></button>
+                        </form> -->
+                    </div>
+        </div>
+        
+                      </nav> 
+        
+        
+        </header>
         <main>
           <post>
-            <h2><a href="post/v-0.2-entradas-individuales.html"> v 0.2 entradas individuales </a></h2>
-            <h2><a href="post/v-0.1-creando-un-blog.html"> v 0.1 creando un blog </a></h2>
+            <h1><a href="post/v-0.2-entradas-individuales.html"> v 0.2 entradas individuales </a></h1>
+            <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+        <p><a href="https://pages-themes.github.io/cayman/another-page.html">Link to another page</a>.</p>
+        <p>There should be whitespace between paragraphs.</p>
+        <p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
+    
+        <p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+        <h2 id="header-2">Header 2</h2>
+        <blockquote>
+          <p>This is a blockquote following a header.</p>
+        
+          <p>When something is important enough, you do it even if the odds are not in your favor.</p>
+        </blockquote>
+        <h3 id="header-3">Header 3</h3>
+        <div class="highlight"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
+          <span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./lang/'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+          <span class="p">}</span>
+          </code></pre></div>
+          <h4 id="header-4">Header 4</h4>
+          <ul>
+            <li>This is an unordered list following a header.</li>
+            <li>This is an unordered list following a header.</li>
+            <li>This is an unordered list following a header.</li>
+          </ul>
+          <h6 id="header-5">Header 5</h6>
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align: left">head1</th>
+                <th style="text-align: left">head two</th>
+                <th style="text-align: left">three</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: left">ok</td>
+                <td style="text-align: left">good swedish fish</td>
+                <td style="text-align: left">nice</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">out of stock</td>
+                <td style="text-align: left">good and plenty</td>
+                <td style="text-align: left">nice</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">ok</td>
+                <td style="text-align: left">good <code class="highlighter-rouge">oreos</code></td>
+                <td style="text-align: left">hmm</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">ok</td>
+                <td style="text-align: left">good <code class="highlighter-rouge">zoute</code> drop</td>
+                <td style="text-align: left">yumm</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</h3>
+         </hr>
+         <h3 id="here-is-an-unordered-list">Here is an unordered list:</h3>
+         <ul>
+          <li>Item foo</li>
+          <li>Item bar</li>
+          <li>Item baz</li>
+          <li>Item zip</li>
+        </ul>
+        <h3 id="and-an-ordered-list">And an ordered list:</h3>
+
+<ol>
+  <li>Item one</li>
+  <li>Item two</li>
+  <li>Item three</li>
+  <li>Item four</li>
+</ol>
+
+<h3 id="and-a-nested-list">And a nested list:</h3>
+
+<ul>
+  <li>level 1 item
+    <ul>
+      <li>level 2 item</li>
+      <li>level 2 item
+        <ul>
+          <li>level 3 item</li>
+          <li>level 3 item</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>level 1 item
+    <ul>
+      <li>level 2 item</li>
+      <li>level 2 item</li>
+      <li>level 2 item</li>
+    </ul>
+  </li>
+  <li>level 1 item
+    <ul>
+      <li>level 2 item</li>
+      <li>level 2 item</li>
+    </ul>
+  </li>
+  <li>level 1 item</li>
+</ul>
+
+<h3 id="small-image">Small image</h3>
+
+<p><img src="post/img/octocat.png" alt="Octocat"></p>
+
+<h3 id="large-image">Large image</h3>
+
+<p><img src="post/img/branching.png" alt="Branching"></p>
+
+<h3 id="definition-lists-can-be-used-with-html-syntax">Definition lists can be used with HTML syntax.</h3>
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
+</code></pre></div></div>
+          </post>
+        <post>
+            <h1><a href="post/v-0.1-creando-un-blog.html"> v 0.1 creando un blog </a></h1>
+            <p>bien, vamos a empezar por lo basico, lo unico que tiene el blog es la version mas basica de el loop donde solo se muestran los titulos.</p>
+            <p>index.php :</p>     
+            <pre class="wp-block-code"><code>
+            &lt;?php  if ( have_posts() ) { while ( have_posts() ) { the_post(); ?&gt;
+            &lt;post&gt;
+              &lt;h1&gt;&lt;?php the_title(); ?&gt;&lt;/h1&gt;
+              &lt;!-- &lt;php the_content(); ?&gt; --&gt;
+            &lt;/post&gt;
+            &lt;?php } } ?&gt;
+            </code></pre>
+            <p>y por supuesto el archivo css style para que el template sea valido</p>
+            <p>style.css :</p>
+            <pre class="wp-block-code"><code>
+            /*   
+            Theme Name: prueba theme
+            Author: Julif
+            Author URI: http://julifweb.com/
+            Version: 0.1
+            Description: Un tema de worpress de prueba, donde puedo practicar y testear mis habilidades con javascript php y css.
+            License: GNU General Public License v2 or later
+            License URI: http://www.gnu.org/licenses/gpl-2.0.html
+            Text Domain: prueba
+            */</code></pre>
+            <p>y una carpeta “demo” para poder previsualizar el template en github</p>
+            <p>esta es la version mas basica que se me ocurre de un blog o pagina web, es literalmente solo una lista de los titulos de las entradas, sin links sin nada. nisiquiera single.php.</p>
+            <p>de echo es tan basico que no puedo ver el contenido de esta entrada en esta version de el blog. </p>
           </post>
         </main>
         <footer> footer </footer>

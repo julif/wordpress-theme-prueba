@@ -46,14 +46,34 @@ header, main, footer {
 }
 
 /* fin de mantener el footer debajo */
-header{ 
+/* header{ 
     background-color: #252525;
     padding: 20px;
     color: white;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+figure{margin: 0px;}
+
+
+post a{text-decoration: none;
+    font-weight: 600;
+    color: #8790f7;}
+
+
+
+
 footer{
     text-align: center;
-    background-color: #252525;
+    background-color: #111c29;
     padding: 20px;
     color: white;
 
@@ -64,6 +84,24 @@ footer{
     max-width: 900px;
     margin: 0px auto;
 }  
+
+post{
+    padding: 20px;
+    display: block;
+    padding-top: 0;
+    border-bottom: 2px solid #ececec;
+}
+post:last-child {
+    border-bottom: none;
+  }
+post img{ max-width: 100%;}
+
+h1{text-align: center;}
+h1 a{
+    color: #000000!important;
+    text-decoration: none;
+}
+h1 a:hover{text-decoration: underline; }
 h1 ,h2{ color: #000000;}
 pre{
     padding: 0.8rem;
