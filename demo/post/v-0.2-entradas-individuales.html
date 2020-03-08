@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <body>
+    <main>
+      <post>
+        <h1>v 0.2 entradas individuales</h1>
+        <p>para poder ver el contenido de las entradas hay que crearles un single.php</p>
+        <p>single.php :</p>
+        <pre class="wp-block-code"><code>
+        &lt;main&gt;
+        &lt;?php  if ( have_posts() ) { while ( have_posts() ) { the_post(); ?&gt;
+        &lt;post&gt;
+          &lt;h1&gt;&lt;?php the_title(); ?&gt;&lt;/h1&gt;
+          &lt;?php the_content(); ?&gt;
+        &lt;/post&gt;
+        &lt;?php } } ?&gt;
+        &lt;/main&gt;
+        </code></pre>
+        <p>y para separarlo mejor de index ahora las entradas de index van a ser links con h2 en lugar de h1</p>
+        <p>index.php :</p>
+        <pre class="wp-block-code"><code>
+        &lt;main&gt;
+        &lt;?php  if ( have_posts() ) { while ( have_posts() ) { the_post(); ?&gt;
+          &lt;post&gt;
+            &lt;h2&gt;&lt;a href="&lt;?php the_permalink(); ?&gt;"&gt;&lt;?php the_title(); ?&gt;&lt;/a&gt;&lt;/h2&gt;
+          &lt;/post&gt;
+        &lt;?php } } ?&gt;
+        &lt;/main&gt;
+        </code></pre>
+      </post>
+    </main>
+  </body> 
+</html>

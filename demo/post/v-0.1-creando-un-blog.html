@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <body>
+    <main>
+      <post>
+        <h1>v 0.1 creando un blog</h1>
+        <p>bien, vamos a empezar por lo basico, lo unico que tiene el blog es la version mas basica de el loop donde solo se muestran los titulos.</p>
+        <p>index.php :</p>     
+        <pre class="wp-block-code"><code>
+        &lt;?php  if ( have_posts() ) { while ( have_posts() ) { the_post(); ?&gt;
+        &lt;post&gt;
+          &lt;h1&gt;&lt;?php the_title(); ?&gt;&lt;/h1&gt;
+          &lt;!-- &lt;php the_content(); ?&gt; --&gt;
+        &lt;/post&gt;
+        &lt;?php } } ?&gt;
+        </code></pre>
+        <p>y por supuesto el archivo css style para que el template sea valido</p>
+        <p>style.css :</p>
+        <pre class="wp-block-code"><code>
+        /*   
+        Theme Name: prueba theme
+        Author: Julif
+        Author URI: http://julifweb.com/
+        Version: 0.1
+        Description: Un tema de worpress de prueba, donde puedo practicar y testear mis habilidades con javascript php y css.
+        License: GNU General Public License v2 or later
+        License URI: http://www.gnu.org/licenses/gpl-2.0.html
+        Text Domain: prueba
+        */</code></pre>
+        <p>y una carpeta “demo” para poder previsualizar el template en github</p>
+        <p>esta es la version mas basica que se me ocurre de un blog o pagina web, es literalmente solo una lista de los titulos de las entradas, sin links sin nada. nisiquiera single.php.</p>
+        <p>de echo es tan basico que no puedo ver el contenido de esta entrada en esta version de el blog. </p>
+      </post>
+    </main>
+  </body> 
+</html>
