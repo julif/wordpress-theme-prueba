@@ -5,6 +5,8 @@
   <!-- css -->
   <link rel="stylesheet" href="<?php bloginfo('template_url')?>/style.css" type="text/css" media="screen" /><!-- hoja de estilos pricipal -->
 </head>
+<body>
+<container>
 <?php get_header() ?>
 <main>
 <?php  if ( have_posts() ) { while ( have_posts() ) { the_post(); ?>
@@ -15,6 +17,7 @@
 <?php } } ?>
 </main>
 <?php get_footer() ?>
-
+</container>
+</body>
 
 
