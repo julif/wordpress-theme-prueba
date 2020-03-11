@@ -110,7 +110,7 @@ nav form{
 <nav>
 <div id="main_nav_content">
     <a  href="<?php echo get_home_url(); ?>" style="padding: 0px;"> 
-        <div style="text-align: left;">
+        <div style="text-align: left;    margin-left: 15px;">
         <img src="<?php bloginfo('template_url')?>/img/avatar_julif.png" alt="Julif" style="    position: absolute;height: 60px;width: auto;margin-top: -5px;">
         <img src="<?php bloginfo('template_url')?>/img/jijiji3.svg" alt="Julif" style="position: absolute;height: 50px;width:auto;    padding-left: 60px;">
     </div>
@@ -121,8 +121,8 @@ nav form{
 </a>
             <div class="right">
               <div class="desktop-only" style="display: flex;margin-right: 15px;">  
-                <a id="nav-blog-link" href="index.html" class="active"> Blog</a>   
-                <a id="nav-devblog-link" href="devblog.html"> Devblog</a>
+                <a id="nav-blog-link" href="<?php echo get_home_url(); ?>/?page_id=70"> Blog</a>   
+                <a id="nav-devblog-link" href="<?php echo get_home_url(); ?>/?page_id=67"> Devblog</a>
               </div>
               
 
